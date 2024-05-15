@@ -1,147 +1,311 @@
- <!-- Header (Topbar + Navbar) -->
- <header class="cs-header">
-  
-    <!-- Navbar -->
-    <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-    <div class="navbar navbar-expand-lg navbar-light bg-light navbar-sticky" data-fixed-element>
-      <div class="container px-0 px-xl-3">
-        <a href="index.html" class="navbar-brand order-lg-1 mr-0 pr-lg-3 mr-lg-4">
-          <img src="assets/img/ecommerce/logo.svg" alt="Createx Logo" width="130">
-        </a>
-        <!-- Search desktop -->
-        <div class="input-group-overlay ml-4 d-lg-block d-none order-lg-3" style="max-width: 21rem;">
-          <input class="form-control appended-form-control" type="text" placeholder="Search for products...">
-          <div class="input-group-append-overlay">
-            <span class="input-group-text"><i class="cxi-search lead align-middle"></i></span>
-          </div>
-        </div>
-        <!-- Toolbar -->
-        <div class="d-flex align-items-center order-lg-3">
-          <ul class="nav nav-tools flex-nowrap">
-            <li class="nav-item d-lg-block d-none mb-0">
-              <a href="account-wishlist.html" class="nav-tool">
-                <i class="cxi-heart nav-tool-icon"></i>
-                <span class="nav-tool-label">2</span>
-              </a>
-            </li>
-            <li class="divider-vertical mb-0 d-lg-block d-none"></li>
-            <li class="nav-item align-self-center mb-0">
-              <a href="#" class="nav-tool pr-lg-0" data-toggle="offcanvas" data-target="cart">
-                <i class="cxi-cart nav-tool-icon"></i>
-                <span class="badge badge-success align-middle mt-n1 ml-2 px-2 py-1 font-size-xs">4</span>
-              </a>
-            </li>
-            <li class="divider-vertical mb-0 d-lg-none d-block"></li>
-            <li class="nav-item mb-0">
-              <button class="navbar-toggler mt-n1 mr-n3" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </li>
-          </ul>
-        </div>
-        <!-- Navbar collapse -->
-        <nav class="collapse navbar-collapse order-lg-2" id="navbarCollapse">
-          <!-- Search mobile -->
-          <div class="input-group-overlay form-group mb-0 d-lg-none d-block">
-            <input type="text" class="form-control prepended-form-control rounded-0 border-0" placeholder="Search for products...">
-            <div class="input-group-prepend-overlay">
-              <span class="input-group-text">
-                <i class="cxi-search font-size-lg align-middle mt-n1"></i>
-              </span>
-            </div>
-          </div>
-          <!-- Menu -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a href="index.html" class="nav-link active">Home</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Shop</a>
-              <ul class="dropdown-menu">
-                <li><a href="shop-catalog.html" class="dropdown-item">Catalog with Filters</a></li>
-                <li><a href="shop-single.html" class="dropdown-item">Single Product</a></li>
-                <li><a href="checkout.html" class="dropdown-item">Checkout</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown mega-dropdown">
-              <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Megamenu</a>
-              <div class="dropdown-menu">
-                <div class="container pt-lg-1 pb-lg-3">
-                  <div class="row">
-                    <div class="col-lg-2 col-md-3 py-2">
-                      <ul class="list-unstyled">
-                        <li><a href="#" class="dropdown-item">New collection</a></li>
-                        <li><a href="#" class="dropdown-item">Best sellers</a></li>
-                        <li><a href="#" class="dropdown-item">Plus size</a></li>
-                        <li><a href="#" class="dropdown-item text-danger">Sale up to 70%</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-3 py-2">
-                      <h4 class="font-size-sm text-uppercase pt-1 mb-2">Clothes</h4>
-                      <ul class="list-unstyled">
-                        <li><a href="#" class="dropdown-item">Coats</a></li>
-                        <li><a href="#" class="dropdown-item">Jackets</a></li>
-                        <li><a href="#" class="dropdown-item">Suits</a></li>
-                        <li><a href="#" class="dropdown-item">Dresses</a></li>
-                        <li><a href="#" class="dropdown-item">Cardigans &amp; sweaters</a></li>
-                        <li><a href="#" class="dropdown-item">Sweatshirts &amp; hoodies</a></li>
-                        <li><a href="#" class="dropdown-item">T-shirts &amp; tops</a></li>
-                        <li><a href="#" class="dropdown-item">Pants</a></li>
-                        <li><a href="#" class="dropdown-item">Jeans</a></li>
-                        <li><a href="#" class="dropdown-item">Shorts</a></li>
-                        <li><a href="#" class="dropdown-item">Skirts</a></li>
-                        <li><a href="#" class="dropdown-item">Lingerie &amp; nightwear</a></li>
-                        <li><a href="#" class="dropdown-item">Sportswear</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-3 py-2">
-                      <h4 class="font-size-sm text-uppercase pt-1 mb-2">Shoes</h4>
-                      <ul class="list-unstyled">
-                        <li><a href="#" class="dropdown-item">Boots</a></li>
-                        <li><a href="#" class="dropdown-item">Flat shoes</a></li>
-                        <li><a href="#" class="dropdown-item">Heels</a></li>
-                        <li><a href="#" class="dropdown-item">Sandals</a></li>
-                        <li><a href="#" class="dropdown-item">Mules</a></li>
-                        <li><a href="#" class="dropdown-item">Sliders</a></li>
-                        <li><a href="#" class="dropdown-item">Slippers</a></li>
-                        <li><a href="#" class="dropdown-item">Sneakers</a></li>
-                        <li><a href="#" class="dropdown-item">Leather</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-2 col-md-3 py-2">
-                      <h4 class="font-size-sm text-uppercase pt-1 mb-2">Accessories</h4>
-                      <ul class="list-unstyled">
-                        <li><a href="#" class="dropdown-item">Bags &amp; backpacks</a></li>
-                        <li><a href="#" class="dropdown-item">Hats &amp; scarves</a></li>
-                        <li><a href="#" class="dropdown-item">Hair accessories</a></li>
-                        <li><a href="#" class="dropdown-item">Belts</a></li>
-                        <li><a href="#" class="dropdown-item">Jewellery</a></li>
-                        <li><a href="#" class="dropdown-item">Watches</a></li>
-                        <li><a href="#" class="dropdown-item">Sunglasses</a></li>
-                        <li><a href="#" class="dropdown-item">Purses</a></li>
-                        <li><a href="#" class="dropdown-item">Socks &amp; tights</a></li>
-                      </ul>
-                    </div>
-                    <div class="col-lg-1 d-none d-lg-block py-2">
-                      <span class="divider-vertical h-100 mx-auto"></span>
-                    </div>
-                    <div class="col-lg-3 d-none d-lg-block py-2">
-                      <a href="#" class="d-block text-decoration-none pt-1">
-                        <img src="assets/img/ecommerce/megamenu.jpg" class="d-block rounded mb-3" alt="Promo banner">
-                        <h5 class="font-size-sm mb-3">Back to school. Sale up to 50%</h5>
-                        <div class="btn btn-outline-primary btn-sm">
-                          See offers
-                          <i class="cxi-arrow-right ml-1"></i>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-           
-          </ul>
-        </nav>
-      </div>
+<div class="row" style="
+right: 0;
+left: 0;
+z-index: 1030;
+background: #f1ee51;
+color:#191919" *ngIf="config.envio_activacion != 'Desactivado'">
+    <div class="col-12 text-center">
+        ENVIO GRATIS POR COMPRAS MAYORES A
+        <span *ngIf="currency == 'PEN'">S/{{config.monto_min_soles}}</span>
+        <span *ngIf="currency != 'PEN'">${{config.monto_min_dolares}}</span>
     </div>
-  </header>
+</div>
+<header class="header header--standard" data-sticky="true" style="    background: #127c5f !important;">
+   
+    <div class="header__left">
+        <a class="ps-logo" [routerLink]="['/']" routerLinkActive="router-link-active">
+        
+            <img src="https://i.postimg.cc/1zY1kcfX/logo-white.png" alt="" style="width:150px;">
+        </a>
+    </div>
+    <div class="header__right">
+        
+        <div class="header__navigation">
+            <ul class="menu">
+                <li><a class="text-white" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'menu.item_uno' | translate }}</a></li>
+                <li class="menu-item-has-children">
+                      <a class="text-white" style="cursor: pointer;" [routerLink]="['/productos']" >
+                          {{ 'menu.item_dos' | translate }}
+                      </a>
+                    <span class="sub-toggle"></span>
+                    <ul class="sub-menu">
+                        <li *ngFor="let item of categorias">
+                            <a style="cursor: pointer;"  [routerLink]="['/productos/categoria/'+item.slug]">{{item.titulo}}</a>
+                        </li>
+  
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a style="cursor: pointer;" class="text-white">{{ 'menu.item_tres' | translate }}</a><span class="sub-toggle"></span>
+                  <ul class="sub-menu">
+                      <li>
+                          <a [routerLink]="['/nosotros']">{{ 'menu.item_siete' | translate }}</a>
+                          <a [routerLink]="['/impacto-social']">{{ 'menu.item_ocho' | translate }}</a>
+                          <a [routerLink]="['/embajadoras']" >{{ 'menu.item_nueve' | translate }}</a>
+                      </li>
+                  </ul>
+              </li>
+                <li><a class="text-white" [routerLink]="['/contacto']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'menu.item_cuatro' | translate }}</a></li>
+            </ul>
+        </div>
+        <div class="header__container">
+          <div class="header__search">
+              <form class="ps-form--header-search" >
+                  <input id="input_search" class="form-control" type="text" placeholder="{{ 'menu.item_cinco' | translate }}" name="filtro_search" [(ngModel)]="filtro_search">
+                  <button type="button" (click)="search()" class="text-white"><i  class="icon-magnifier"></i></button>
+              </form>
+              <a class="header__search-mini" href="#"><i class="icon-magnifier"></i></a>
+          </div>
+            <div class="header__actions">
+                  <ng-container *ngIf="user_lc != undefined">
+                      <a class="header__user text-white" [routerLink]="['/cuenta/perfil']"><i class="icon-user"></i></a>
+                      
+                  </ng-container>
+                  <ng-container *ngIf="user_lc == undefined">
+                      <a class="header__user text-white" [routerLink]="['/login']"><i class="icon-user"></i>
+                        </a>
+                  </ng-container>
+  
+                  <ng-container *ngIf="user_lc != undefined">
+                      <a class="header__cart ps-toggle--sidebar" (click)="openCart()">
+                          <i class="icon-cart text-white"></i><span  style="background: #f1ee51;color:black">{{carrito_arr.length}}</span>
+                      </a>
+                  </ng-container>
+                  <ng-container *ngIf="user_lc == undefined">
+                      <a class="header__cart ps-toggle--sidebar" (click)="openCart()">
+                          <i class="icon-cart text-white"></i><span  style="background: #f1ee51;color:black">{{carrito_logout.length}}</span>
+                      </a>
+                  </ng-container>
+  
+                
+                <a class="header__menu-toggle ps-toggle--sidebar text-white" style="cursor: pointer;" (click)="openMenu()"><i class="icon-menu"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+<header class="header header--mobile" data-sticky="true" >
+    
+<div class="header__left"><a class="ps-logo" [routerLink]="['/']" routerLinkActive="router-link-active" ><img src="assets/img/logo-res.png" alt=""></a></div>
+<div class="header__right">
+    <div class="header__actions">
+            <ng-container *ngIf="user_lc != undefined">
+                <a class="header__user" [routerLink]="['/cuenta/perfil']"><i class="icon-user"></i></a>
+            </ng-container>
+            <ng-container *ngIf="user_lc == undefined">
+                <a class="header__user" [routerLink]="['/login']"><i class="icon-user"></i></a>
+            </ng-container>
+            <ng-container *ngIf="user_lc != undefined">
+                <a class="header__cart ps-toggle--sidebar" (click)="openCart()">
+                    <i class="icon-cart"></i><span>{{carrito_arr.length}}</span>
+                </a>
+            </ng-container>
+            <ng-container *ngIf="user_lc == undefined">
+                <a class="header__cart ps-toggle--sidebar" (click)="openCart()">
+                    <i class="icon-cart"></i><span>{{carrito_logout.length}}</span>
+                </a>
+            </ng-container>
+        <a class="header__menu-toggle ps-toggle--sidebar" style="cursor: pointer;" (click)="openMenu()"><i class="icon-menu"></i></a>
+    </div>
+</div>
+</header>
+  
+  
+  
+  
+  <div class="ps-panel--sidebar" id="modalCarrito">
+      <div class="ps-panel__header">
+          <a class="ps-panel__close" style="cursor: pointer;" (click)="openCart()"><i class="icon-cross"></i></a>
+      </div>
+      <div class="ps-panel__content">
+          <div class="ps-cart--mini">
+              <div class="ps-cart__content" *ngIf="user_lc == undefined">
+                  <ng-container *ngIf="carrito_logout.length >= 1">
+                      <div class="ps-cart__items">
+                          <div class="ps-product--mini-cart" *ngFor="let item of carrito_logout; let idx = index">
+                              <div class="ps-product__thumbnail">
+                                  <a [routerLink]="['/productos/',item.producto.slug]">
+                                      <img [src]="url +'obtener_portada/'+item.producto.portada" alt="">
+                                  </a>
+                              </div>
+                              <div class="ps-product__content">
+                                  <span class="ps-product__remove" style="cursor: pointer;" (click)="eliminar_item_guest(item)"><i class="icon-cross"></i>
+                                  </span>
+                                  <a class="ps-product__title" [routerLink]="['/productos/',item.producto.slug]">{{item.producto.titulo}}</a>
+                                  <p> Cantidad: {{item.cantidad}}</p>
+                                  <p> Talla: {{item.variedad.variedad}}</p>
+                                  <span class="ps-product__price">
+                                      <ng-container *ngIf="currency != 'PEN'">         
+                                        <span class=" mr-3"><b style="    color: #999ea9;">${{item.producto.precio_dolar}}</b></span>
+                                        <span class="text-danger" *ngIf="item.producto.precio_antes_dolares >= 1">
+                                          <del>${{item.producto.precio_antes_dolares}}</del>
+                                        </span>
+                                      </ng-container>
+                                      <ng-container *ngIf="currency == 'PEN'">
+                                        
+                                        <span class=" mr-3"><b style="    color: #999ea9;">S/{{item.producto.precio}}</b></span>
+                                        <span class="text-danger" *ngIf="item.producto.precio_antes_soles >= 1">
+                                          <del>S/{{item.producto.precio_antes_soles}}</del>
+                                        </span>
+                                      </ng-container>
+                                  </span>
+                              </div>
+                          </div>
+                         
+                      </div>
+                  </ng-container>
+                  <ng-container *ngIf="carrito_logout.length == 0">
+                      <form class="ps-form--404" action="404-page.html" method="get">
+                          <div class="ps-form__header">
+                              <img src="assets/img/carrito-de-compras.png" style="width: 220px !important; " alt="">
+                          </div>
+                          <h4 class="text-muted">¡Tu carrito esta vacio!</h4>
+
+                          <a [routerLink]="['/productos']" routerLinkActive="router-link-active"  style="text-decoration: underline;
+                          font-weight: 700;">Volver a la tienda</a>
+                        </form>
+                  </ng-container>
+                  
+                  <div class="ps-cart__footer">
+                      <h3>Sub Total:<strong>
+                          <span *ngIf="currency != 'PEN'">${{subtotal}}</span>
+                          <span *ngIf="currency == 'PEN'">S/{{subtotal}}</span>
+                      </strong></h3>
+                        <figure  *ngIf="carrito_logout.length != 0">
+                            <a class="ps-btn ps-btn--outline"  [routerLink]="['/carrito']">Carrito</a>
+                            <a class="ps-btn ps-btn--black" *ngIf="user_lc != undefined" [routerLink]="['/checkout']">Checkout</a>
+                        </figure>
+                        <br> 
+                        <ng-container>
+                            <div>
+                                <h5 class="text-center"><b style="color: #127c5f;">Antes de realizar tu compra</b></h5>
+                            </div>
+                            <br>
+                            <p>
+                                <b style="color: #191919;">{{ 'menu.item_quince' | translate }}</b> {{ 'menu.item_catorce' | translate }}
+                            </p>
+                            <p>
+                                <b style="color: #191919;">{{ 'menu.item_dsiete' | translate }}</b> {{ 'menu.item_dseis' | translate }}
+                            </p>
+                        </ng-container>
+                        
+                  </div>
+
+              </div>
+              <div class="ps-cart__content" *ngIf="user_lc != undefined">
+                  <ng-container *ngIf="carrito_arr.length >= 1">
+                      <div class="ps-cart__items">
+                          <div class="ps-product--mini-cart" *ngFor="let item of carrito_arr; let idx = index">
+                              <div class="ps-product__thumbnail">
+                                  <a [routerLink]="['/productos/',item.producto.slug]">
+                                      <img [src]="url +'obtener_portada/'+item.producto.portada" alt="">
+                                  </a>
+                              </div>
+                              <div class="ps-product__content"><span  style="cursor: pointer;" (click)="eliminar_item(item._id)" class="ps-product__remove"><i class="icon-cross"></i></span>
+                                  <a class="ps-product__title" [routerLink]="['/productos/',item.producto.slug]">{{item.producto.titulo}}</a>
+                                  <p> Cantidad: {{item.cantidad}}</p>
+                                  <p> Talla: {{item.variedad.valor}}</p>
+                                  <span class="ps-product__price">
+                                    <ng-container *ngIf="currency != 'PEN'">         
+                                        <span class=" mr-3"><b style="    color: #999ea9;">${{item.producto.precio_dolar}}</b></span>
+                                        <span class="text-danger" *ngIf="item.producto.precio_antes_dolares >= 1">
+                                          <del>${{item.producto.precio_antes_dolares}}</del>
+                                        </span>
+                                      </ng-container>
+                                      <ng-container *ngIf="currency == 'PEN'">
+                                        
+                                        <span class=" mr-3"><b style="    color: #999ea9;">S/{{item.producto.precio}}</b></span>
+                                        <span class="text-danger" *ngIf="item.producto.precio_antes_soles >= 1">
+                                          <del>S/{{item.producto.precio_antes_soles}}</del>
+                                        </span>
+                                      </ng-container>
+                                  </span>
+                              </div>
+                          </div>
+                         
+                      </div>
+                  </ng-container>
+                  <ng-container *ngIf="carrito_arr.length == 0">
+                      <form class="ps-form--404" action="404-page.html" method="get">
+                          <div class="ps-form__header">
+                              <img src="assets/img/carrito-de-compras.png" style="width: 220px !important; " alt="">
+                          </div>
+                          <h4 class="text-muted">¡Tu carrito esta vacio!</h4>
+                          <a [routerLink]="['/productos']" routerLinkActive="router-link-active"  style="text-decoration: underline;
+                          font-weight: 700;">Volver a la tienda</a>
+                        </form>
+                  </ng-container>
+                  
+                  <div class="ps-cart__footer">
+                      <h3>Sub Total:<strong>
+                          <span *ngIf="currency != 'PEN'">${{subtotal}}</span>
+                          <span *ngIf="currency == 'PEN'">S/{{subtotal}}</span>
+                      </strong></h3>
+                    
+                      <figure *ngIf="carrito_arr.length != 0">
+                          <a class="ps-btn ps-btn--outline"  [routerLink]="['/carrito']">Carrito</a>
+                          <a class="ps-btn ps-btn--black" *ngIf="user_lc != undefined" [routerLink]="['/checkout']">Checkout</a>
+                        </figure>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="ps-panel--sidebar" id="modalMenu">
+      <div class="ps-panel__header"><a class="ps-panel__close" style="cursor: pointer;" (click)="openMenu()"><i class="icon-cross"></i></a></div>
+      <div class="ps-panel__content">
+          <nav class="ps-navigation--mobile">
+              <div class="ps-navigation__language-currency">
+                  <div class="row">
+                      <div class="col-6">
+                          <ul class="ps-list">
+                              <li class="active"><a>Español</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-6">
+                          <ul class="ps-list">
+                              <li *ngIf="currency != 'PEN'" class="active"><a>USD</a></li>
+                              <li *ngIf="currency == 'PEN'" class="active"><a>PEN</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+              <div class="ps-navigation__menu">
+                  <ul class="menu--desktop">
+                      <li><a [routerLink]="['/']" >{{ 'menu.item_uno' | translate }}</a></li>
+                      <li><a [routerLink]="['/productos']" >{{ 'menu.item_dos' | translate }}</a></li>
+                      <li><a [routerLink]="['/nosotros']">{{ 'menu.item_seis' | translate }}</a></li>
+                      <li><a [routerLink]="['/ofertas']" >{{ 'menu.item_trece' | translate }}</a></li>
+                      <li><a [routerLink]="['/contacto']" >{{ 'menu.item_cuatro' | translate }}</a></li>
+  
+                      <li *ngIf="user_lc"><a (click)="logout()" >{{ 'menu.item_diez' | translate }}</a></li>
+                  </ul>
+                  <ul class="menu--mobile">
+                      <li><a  [routerLink]="['/']" >{{ 'menu.item_inicio' | translate }}</a></li>
+                      <li class="menu-item-has-children has-mega-menu"><a  [routerLink]="['/productos']" routerLinkActive="router-link-active" >Shop</a><span class="sub-toggle"></span>
+                          <div class="mega-menu">
+                              <div class="mega-menu__column">
+                                  <h4>Categorías<span class="sub-toggle"></span></h4>
+                                  <ul class="sub-menu--mega">
+                                 
+                                      <li *ngFor="let item of categorias">
+                                          <a [routerLink]="['/productos/categoria/',item.titulo.toLowerCase()]">{{item.titulo}}</a>
+                                      </li>
+                                  </ul>
+                              </div>
+                              
+                          </div>
+                      </li>
+                      <li><a [routerLink]="['/nosotros']" >{{ 'menu.item_seis' | translate }}</a></li>
+                      <li><a [routerLink]="['/embajadoras']">{{ 'menu.item_nueve' | translate }}</a></li>
+                      <li><a [routerLink]="['/contacto']">{{ 'menu.item_cuatro' | translate }}</a></li>
+                  
+                      <li *ngIf="user_lc"><a (click)="logout()" >{{ 'menu.item_diez' | translate }}</a></li>
+                  </ul>
+              </div>
+              <figure class="ps-navigation__bottom">
+                  <figcaption>{{ 'menu.item_once' | translate }}</figcaption>
+                  <p>Ciudad, País contacto@domain.com <br> (+51) 987456321</p>
+              </figure>
+          </nav>
+      </div>
+  </div>
